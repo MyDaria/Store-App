@@ -19,7 +19,7 @@ const Product = (props) => {
     console.log('Name: ', props.title);
     console.log('Price: ', getPrice());
     console.log('Size: ', currentSize);
-    console.log('Color: ', currentColor);
+    console.log('Colour: ', currentColor);
   };
 
   return (
@@ -30,7 +30,7 @@ const Product = (props) => {
           <h2 className={styles.name}>{props.title}</h2>
           <span className={styles.price}>Price: {getPrice()}$</span>
         </header>
-        <ProductForm colors={props.colors} sizes={props.sizes} addToCart={addToCart} currentColor={currentColor} setCurrentColor={setCurrentColor} currentSize={currentSize}setCurrentSize={setCurrentSize}/>
+        <ProductForm colors={props.colors} sizes={props.sizes} addToCart={addToCart} currentColor={currentColor} setCurrentColor={setCurrentColor} currentSize={currentSize} setCurrentSize={setCurrentSize}/>
       </div>
     </article>
   );
